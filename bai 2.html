@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr =  [1,2,3,4,5];
+        let number = parseInt(prompt("Nhập số cần tìm"));
+        function findNumber(array,number1){
+            let flag = false
+            for (let i = 0; i < array.length; i++) {
+                if(number1 === array[i]){
+                    flag = true;
+                    alert("Số " + number1 + " có trong mảng" + " ở vị trí" + i)
+                }
+            }
+            if(flag === false){
+                alert("giá trị không có trong mảng")
+            }
+        }
+        findNumber(arr,number)
+    </script>
+</body>
+</html>

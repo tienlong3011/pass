@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    str = prompt("Nhập vào một chuỗi");
+    let array = str.split('')
+    function find(arr){
+        let flag = false
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i] === 'a'
+                ||arr[i] === 'o'
+                ||arr[i] === 'e'
+                ||arr[i] === 'u'
+                ||arr[i] === 'i'){
+                flag = true
+            }
+        }
+        return flag;
+    }
+    alert(find(array))
+
+
+</script>
+</body>
+</html>
